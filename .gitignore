@@ -1,0 +1,6 @@
+# Build directories
+cmake-build-*/
+
+# IDE files
+.idea/
+.codebuddy/
