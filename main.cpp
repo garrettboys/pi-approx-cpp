@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-double nilakanthaSeries(int digits);
+double piApprox(int digits);
 
 int main() {
   std::cout << "Input the number of times to loop the Nilakantha series: " << std::endl;
@@ -15,10 +15,10 @@ int main() {
     std::cin >> digits;
   }
 
-  std::cout << nilakanthaSeries(digits);
+  std::cout << piApprox(digits);
 }
 
-double nilakanthaSeries(int digits) {
+double piApprox(int digits) {
   double total = 0;
   for (int n = 0; n < digits; n++) {
     total += (4.0/(2*n+1)) * pow(-1, n);
